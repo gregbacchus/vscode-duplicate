@@ -31,4 +31,8 @@ NOTE: if the key binding isn't working, it may be because something is alread bo
 
 Initial release.
 
+### 1.0.1
+
+Added icon image
+
 **Enjoy!**

@@ -2,7 +2,7 @@
   "name": "duplicate",
   "displayName": "Duplicate selection or line",
   "description": "Duplicte functionality like you are used to.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "geeebe",
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "Sublime Text",
     "ReSharper"
   ],
+  "icon": "images/duplicate.png",
   "activationEvents": [
     "onCommand:geeebe.duplicateText"
   ],
