@@ -1,9 +1,13 @@
 {
-  "name": "sublime-duplicate",
+  "name": "duplicate",
   "displayName": "Duplicate selection or line",
   "description": "Duplicte functionality like you are used to.",
   "version": "1.0.0",
   "publisher": "geeebe",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/gregbacchus/vscode-duplicate.git"
+  },
   "engines": {
     "vscode": "^1.24.0"
   },
