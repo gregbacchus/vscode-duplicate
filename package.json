@@ -26,6 +26,7 @@
     "onCommand:geeebe.duplicateText"
   ],
   "main": "./out/extension",
+  "browser": "./out/extension",
   "contributes": {
     "commands": [
       {
