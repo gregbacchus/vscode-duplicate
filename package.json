@@ -1,12 +1,12 @@
 {
   "name": "duplicate",
   "displayName": "Duplicate selection or line",
-  "description": "Duplicate functionality like you are used to.",
-  "version": "1.0.1",
+  "description": "Duplicate functionality like you are used to",
+  "version": "1.0.2",
   "publisher": "geeebe",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/gregbacchus/vscode-duplicate.git"
+    "url": "https://github.com/gregbacchus/vscode-duplicate"
   },
   "engines": {
     "vscode": "^1.24.0"
@@ -54,7 +54,6 @@
     "typescript": "^2.6.1",
     "vscode": "^1.1.6",
     "tslint": "^5.8.0",
-    "@types/node": "^7.0.43",
-    "@types/mocha": "^2.2.42"
+    "@types/node": "^7.0.43"
   }
 }
