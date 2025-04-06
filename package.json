@@ -2,7 +2,7 @@
   "name": "duplicate",
   "displayName": "Duplicate selection or line",
   "description": "Duplicate functionality like you are used to",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "publisher": "geeebe",
   "repository": {
     "type": "git",
@@ -32,6 +32,14 @@
       {
         "command": "geeebe.duplicateText",
         "title": "Duplicate selection or line"
+      },
+      {
+        "command": "geeebe.copyText",
+        "title": "Copy line or selection"
+      },
+      {
+        "command": "geeebe.pasteText",
+        "title": "Paste previously copied line or selection"
       }
     ],
     "keybindings": [
@@ -39,6 +47,18 @@
         "mac": "cmd+d",
         "key": "ctrl+d",
         "command": "geeebe.duplicateText",
+        "when": "editorTextFocus"
+      },
+      {
+        "mac": "control+c",
+        "key": "alt+c",
+        "command": "geeebe.copyText",
+        "when": "editorTextFocus"
+      },
+      {
+        "mac": "control+v",
+        "key": "alt+v",
+        "command": "geeebe.pasteText",
         "when": "editorTextFocus"
       }
     ]
@@ -53,7 +73,7 @@
   "devDependencies": {
     "@types/node": "^16.9.6",
     "tslint": "^6.1.3",
-    "typescript": "^4.4.3",
+    "typescript": "^4.9.5",
     "vscode": "^1.1.37"
   }
 }
