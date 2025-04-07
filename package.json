@@ -2,7 +2,7 @@
   "name": "duplicate",
   "displayName": "Duplicate selection or line",
   "description": "Duplicate functionality like you are used to",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "geeebe",
   "repository": {
     "type": "git",

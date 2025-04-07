@@ -49,12 +49,24 @@ function pasteText() {
 
   editor.edit(textEdit => {
     selections.forEach(selection => {
-      if (fullLine) {
-        // Paste full line before current line
-        textEdit.insert(new vscode.Position(selection.start.line, 0), text);
+      if (selection.isEmpty) {
+        // Вставка, если ничего не выделено
+        if (fullLine) {
+          // Вставка строки целиком — вставляется перед текущей строкой
+          const insertPos = new vscode.Position(selection.start.line, 0);
+          textEdit.insert(insertPos, text);
+        } else {
+          // Вставка фрагмента — вставляется в курсор
+          textEdit.insert(selection.start, text);
+        }
       } else {
-        // Paste selection at cursor
-        textEdit.insert(selection.start, text);
+        // Был выделен фрагмент — заменяем его
+        if (fullLine) {
+          // Если вставляется строка, но заменяет выделенное — вставляем как обычный текст (без переноса строки)
+          textEdit.replace(selection, text.replace(/[\r\n]+$/, ''));
+        } else {
+          textEdit.replace(selection, text);
+        }
       }
     });
   });

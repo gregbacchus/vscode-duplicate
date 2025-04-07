@@ -60,4 +60,8 @@ Added split functionality for copy and past; the original functionality was left
 Minor fixes of 1.0.3
 A LICENSE.MD file was added.
 
+### 1.0.5
+Changed paste behavior:
+When pasting over a selection, the selected text is now replaced with the copied content. If the copied content is a full line, it no longer inserts a line break when replacing a selection. Unselected pastes behave as before.
+
 **Enjoy!**
